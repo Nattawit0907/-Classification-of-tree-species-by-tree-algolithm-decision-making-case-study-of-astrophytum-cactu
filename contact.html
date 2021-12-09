@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrophytum</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,300&display=swap');
+    </style>
+</head>
+
+<body style="font-family: 'Mali', cursive;">
+
+    <body background="รูป/4467.jpg">
+        <header class="tm-header" id="tm-header">
+            <div class="tm-header-wrapper">
+                <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div><img src="รูป/cac 1.gif " width="200" height="200"></div>
+                <h1 class="text-center">Astrophytum</h1>
+
+                <nav class="tm-nav" id="tm-nav">
+                    <ul>
+                        <li class="tm-nav-item"><a href="index.html" class="tm-nav-link">
+                                <i class="fas fa-home"></i>
+                                <h3>หน้าหลัก</h3>
+                            </a></li>
+                        <li class="tm-nav-item"><a href="post.html" class="tm-nav-link">
+                                <i class="fas fa-pen"></i>
+
+                                <h3>ค้นหากระบองเพชร</h3>
+                            </a></li>
+                        <li class="tm-nav-item"><a href="about.html" class="tm-nav-link">
+                                <i class="fas fa-users"></i>
+                                <h3>วิธีการเลี้ยง Astrophytum</h3>
+                            </a></li>
+                        <li class="tm-nav-item "><a href="contact.html" class="tm-nav-link">
+                                <i class="far fa-comments"></i>
+                                <h3>ติดต่อ</h3>
+                            </a></li>
+                    </ul>
+                </nav>
+                <div class="tm-mb-65">
+
+                </div>
+
+            </div>
+        </header>
+        <div class="container-fluid">
+            <main class="tm-main">
+
+
+                <div class="row tm-row tm-mb-120">
+                    <div class="col-12">
+                        <h2 class="tm-color-primary tm-post-title tm-mb-55">
+                            <font color="black">แสดงความคิดเห็น</font>
+                        </h2>
+                    </div>
+                    <form>
+                        ชื่อ:<br><input type="text" name="name" id="name" /><br>
+                        อีเมล: <br><input type="text" name="email" id="email" /><br>
+                        ข้อความ: <br><textarea id="message" name="subject" style="height:170px"></textarea>
+                        <br><input style="background-color:cornflowerblue; border-color:cornflowerblue; color:white"
+                            type="submit" value="ส่งข้อความ" onclick="sendMail()" />
+
+                    </form>
+
+                    <script>
+                        const sendMail = () => {
+                            const name = document.getElementById('name').value;
+                            const email = document.getElementById('email').value;
+                            const message = document.getElementById('message').value;
+                            window.open(`mailto:geniga.ni@chandra.ac.th?subject=เมลล์จากคุณ${name + ' ' + email}&body=${message}`);
+                        }
+                    </script>
+                    <div class="col-lg-8 tm-contact-right">
+                        <img src="รูป/newchandralogo1.png" width="150" height="200">
+                        <h3>
+                            <font color="black">มหาวิทยาลัยราชภัฏจันทรเกษม <br>คณะวิทยาศาสตร์
+                                <br>สาขาวิทยาการคอมพิวเตอร์</font>
+                        </h3>
+
+                        <h3>
+                            <font color="black"> หากมีข้อผิดพลาดประการใดขออภัยไว้ ณ ที่นี้ </font>
+                        </h3>
+
+                    </div>
+                </div>
+
+            </main>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/templatemo-script.js"></script>
+    </body>
+
+</html>
